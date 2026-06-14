@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
 
-const connectDB = require("./db");
+const connectDB = require("./config/db");
 
 process.on('uncaughtException', (err) => {
     console.error('Uncaught Exception:', err && (err.stack || err.message || err));
